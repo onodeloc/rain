@@ -10,12 +10,10 @@ export default function Blank() {
           Will it <a href="../">Rain?</a>
         </h1>
         <br></br>
+        <APIcall />
+      </main>
 
-        {/* <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p> */}
-
+      <main className={styles.main2}>
         <div className={styles.grid}>
           <a href="../api/weather" className={styles.card}>
             <h2>Weather &rarr;</h2>
@@ -26,9 +24,8 @@ export default function Blank() {
             <h2>About us &rarr;</h2>
             <p>Learn more about how this application was created!</p>
           </a>
-          
+
         </div>
-        <APIcall/>
       </main>
 
       <footer className={styles.footer}>
@@ -37,10 +34,7 @@ export default function Blank() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by onodeloc.com{' '}
-          <span className={styles.logo}>
-            {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
-          </span>
+          Powered by onodeloc.com
         </a>
       </footer>
     </div>

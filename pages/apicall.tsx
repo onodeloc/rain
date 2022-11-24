@@ -15,8 +15,10 @@ export default function APIcall() {
 	return (
 		<div className={styles.container}>
 
-			<main className={styles.main2}>
-				<button className={styles.button} onClick={callAPI}>Make API Call</button>
+			<main>
+				<button className={styles.card} onClick={callAPI}>
+					<h2>Click me!</h2>
+					</button>
 			</main>
 		</div>
 	);
