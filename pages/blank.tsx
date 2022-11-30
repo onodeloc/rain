@@ -3,15 +3,11 @@ import styles from '../styles/Home.module.css'
 import APIcall from '../pages/apicall'
 
 export default function Blank() {
+	const callAPI = async () => {
+		console.log(test);
+	};
   return (
     <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Will it <a href="../">Rain?</a>
-        </h1>
-        <br></br>
-        <APIcall />
-      </main>
 
       <main className={styles.main2}>
         <div className={styles.grid}>

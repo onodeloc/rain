@@ -13,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <APIcall/>
       <Blank/>
     
     </div>
