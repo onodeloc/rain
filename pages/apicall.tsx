@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css';
 import React, { useState } from "react";
+import { Button } from 'react-bootstrap';
 
 export default function APIcall() {
 
@@ -24,9 +25,9 @@ export default function APIcall() {
 					Will it <a href="../">Rain?</a>
 				</h1>
 				<br></br>
-				<button className={styles.card} onClick={callAPI}>
+				<Button onClick={callAPI}>
 					<h2>Click me!</h2>
-				</button>
+				</Button>
 			</main>
 		</div>
 	);
