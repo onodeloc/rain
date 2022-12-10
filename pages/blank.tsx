@@ -17,7 +17,7 @@ export default function Blank() {
           </a>
 
           <a href="https://onodeloc.com" className={styles.card}>
-            <h2>About us &rarr;</h2>
+            <h2>About &rarr;</h2>
             <p>Learn more about how this application was created!</p>
           </a>
 
