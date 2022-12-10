@@ -6,12 +6,20 @@ export default function APIcall() {
 
 	const [text, setText] = useState('');
 	var toggle = false;
+	var lat = "0";
+	var lon = "0";
+
+	function processForm() {
+
+		console.log("It worked?");
+		// Get the form data
+		// var inputText = document.getElementById('input_text').value;
+
+		// // Use the form data within the script
+		// alert('You entered: ' + inputText);
+	}
 
 	var callAPI = async () => {
-
-		var lat = "0";
-		var lon = "0";
-
 		try {
 			const res = await fetch(
 				`https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=daily,alerts&appid=da7baf20495e7f43d736127763cae39d
@@ -22,8 +30,8 @@ export default function APIcall() {
 
 			var currRain = data.hourly.rain;
 
-			if (currRain > 0){
-				setText("It will rain "+currRain+"mm!");
+			if (currRain > 0) {
+				setText("It will rain " + currRain + "mm!");
 			} else {
 				setText("It will not rain.");
 			}
@@ -52,6 +60,13 @@ export default function APIcall() {
 				<h1 className={styles.title}>
 					Will it <a href="">Rain?</a>
 				</h1>
+				<br></br>
+				<form onSubmit={processForm()}>
+					<div>
+						<label>What is your latitude?</label>
+						<input type="location" className="form-control" placeholder="Enter latitude"></input>
+					</div>
+				</form>
 				<br></br>
 				<Button onClick={callAPI}>
 					<h2>Click me!</h2>
